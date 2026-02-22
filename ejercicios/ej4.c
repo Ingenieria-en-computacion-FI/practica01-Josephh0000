@@ -7,3 +7,20 @@ Dir(a[5]) = 5000 + (5 * 4) = 5020
 
 
 Formula usada: Dir(a[i]) = 5000 + (i * 4)
+
+  // Ejercicio 4
+#include <stdio.h>
+
+int main() {
+    int base = 5000;
+    int a3 = 5012;
+    
+    int tamano = (a3 - base) / 3;
+    int a5 = base + (5 * tamano);
+    
+    printf("1. Tamano del tipo: %d bytes\n", tamano);
+    printf("2. Direccion de a[5]: %d\n", a5);
+    printf("3. Formula: Dir(a[i]) = %d + (i * %d)\n", base, tamano);
+    
+    return 0;
+}
