@@ -4,3 +4,18 @@ Demostracion Formal: La direccion se calcula con la formula Dir(a[i]) = Base + (
 Dir(a[10]) = 1000 + (10 * 4) = 1040
 
 Error: El estudiante sumo erroneamente el indice directo a la direccion de memoria sin multiplicarlo por el tamano del tipo de dato.
+
+  // Ejercicio 5
+#include <stdio.h>
+
+int main() {
+    int base = 1000;
+    int tamano = 4; 
+    
+    int dir_real = base + (10 * tamano);
+    
+    printf("Afirmacion del estudiante (a[10]=1010): FALSA\n");
+    printf("Demostracion: La direccion real es Base + (10 * 4) = %d\n", dir_real);
+    
+    return 0;
+}
