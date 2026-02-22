@@ -7,3 +7,20 @@ C = 4 columnas
 
 
 Tamano total: Si asumimos que es una matriz m[2][4], el calculo seria: 2 filas * 4 columnas * 4 bytes = 32 bytes en total.
+
+#include <stdio.h>
+
+int main() {
+    int base = 2000;
+    int m12 = 2024;
+    int tamano = 4;
+    
+    int columnas = ((m12 - base) / tamano) - 2;
+    
+    int tamano_total = 2 * columnas * tamano; 
+    
+    printf("1. Numero de columnas: %d\n", columnas);
+    printf("2. Tamano total de la matriz (asumiendo 2 filas): %d bytes\n", tamano_total);
+    
+    return 0;
+}
