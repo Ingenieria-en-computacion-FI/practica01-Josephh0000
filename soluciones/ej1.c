@@ -1,6 +1,9 @@
-
 #include <stdio.h>
-int main(){
-    // Resolver ejercicio 1
-    return 0;
-}
+
+int main() {
+    int a[6];
+
+    printf("--- EJERCICIO 1 ---\n");
+    for (int i = 0; i < 6; i++) {
+        printf("Direccion de a[%d]: %p\n", i, (void*)&a[i]);
+    }
